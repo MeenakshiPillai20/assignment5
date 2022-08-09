@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 245, 69);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+.head1{
+    text-align: center;
+    margin: 0;
+}
+.container{
+    max-width: 600px;
+    margin: 50px auto;
+    height: 100vh;
+
+}
+.container-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin-bottom: 50px;
+}
+.boxes1{
+    height: 100px;
+    width: 100px;
+    background-color:rgb(99, 131, 168) ;
+    animation: animation1 linear infinite 4s  ; 
+}
+
+.boxes2{
+    height: 100px;
+    width: 100px;
+    background-color:rgb(176, 162, 179) ;
+    animation: animation2 linear infinite 2s  ; 
+}
+.boxes3{
+    height: 100px;
+    width: 100px;
+    background-color:rgb(49, 94, 146) ;
+    animation: animation3 linear infinite 5s  ; 
+}
+.boxes4{
+    height: 100px;
+    width: 100px;
+    background-color:rgb(49, 94, 146) ;
+    animation: animation4 linear infinite 2s  ; 
+}
+.boxes5{
+    height: 100px;
+    width: 100px;
+    background-color:rgb(129, 6, 6) ;
+    animation: animation5 linear infinite 2s  ; 
+}
+.boxes6{
+    height: 100px;
+    width: 100px;
+    background-color:rgb(129, 6, 6) ;
+    animation: animation6 linear infinite 5s  ; 
+}
+@keyframes animation1{
+    0%{
+        transform: rotateZ(0deg) ;
+      }
+    25%{
+        transform: rotateZ(-10deg) ;
+      }
+    50%{
+        transform: rotateZ(0deg) ;
+      }
+    75%{
+        transform: rotateZ(10deg) ;
+      }
+    100%{
+        transform: rotateZ(0deg) ;
+      }
+}
+
+@keyframes animation2{
+    0%{
+        transform: skewX(0deg) ;
+
+      }
+    25%{
+        transform: skewX(20deg) ;
+      }
+    50%{
+        transform: skewX(0deg) ;
+      }
+    75%{
+        transform: skewY(20deg) ;
+      }
+    100%{
+        transform: skewY(0deg) ;
+      }
+}
+@keyframes animation3{
+   from{
+       transform: rotate(0deg);
+   }
+   to{
+       transform: rotate(360deg);
+   }
+}
+@keyframes animation4{
+    from{
+        transform: rotateX(0deg) ;
+    }
+    to{
+        transform: rotateX(60deg) ;
+    }
+   
+}
+@keyframes animation5{
+    from{
+        transform: rotateY(0deg) ;
+    }
+    to{
+        transform: rotateY(60deg) ;
+    }
+   
+}
+@keyframes animation6{
+    0%{
+        transform: rotate(0deg);
+      }
+    25%{
+        transform: rotate(-80deg);
+      }
+    50%{
+        transform: rotate(0deg);
+      }
+    75%{
+        transform: rotate(80deg);
+      }
+    100%{
+        transform: rotate(0deg);
+      }
+ }
+ .link{
+    font-size: 32px;
+    text-align: center;
+    color: maroon;
+    margin-bottom: 50px;
+    display: inline-block;
+ }
